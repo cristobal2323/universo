@@ -1,0 +1,684 @@
+/* Comienzo de Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    
+}
+*{
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Fin de Reset */
+
+/* ClearFix */
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* html .clearfix { zoom: 1; } /* IE6 */
+
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+/* Fonts */
+@font-face {
+    font-family: 'adam.cg_proregular';
+    src: url('../fonts/adam.cg_pro-webfont.eot');
+    src: url('../fonts/adam.cg_pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/adam.cg_pro-webfont.woff2') format('woff2'),
+         url('../fonts/adam.cg_pro-webfont.woff') format('woff'),
+         url('../fonts/adam.cg_pro-webfont.ttf') format('truetype'),
+         url('../fonts/adam.cg_pro-webfont.svg#adam.cg_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Columnas */
+ .contenedor{
+ 	width: 100%;
+ 	padding: 0 5%;
+ }
+/* Codigo */
+body{
+	background: url(../img/sistemasolar.png)  no-repeat, url(../img/estrellas.gif)  ;
+	background-size: 100%, 200px;
+	font-size: 16px;
+
+}
+
+header{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+}
+
+h1{
+	font-family: 'adam.cg_proregular';
+	font-size: 7em;
+	padding-top: 10%;
+}
+
+.parrafo-header{
+	padding-top: 3%;
+	line-height: 130%;
+	margin: auto;
+	font-family: 'adam.cg_proregular';
+	font-size: 1.5em;
+}
+
+/* Menu */
+nav{
+	width: 100%;
+	display: block;
+	z-index: 2;
+	position: absolute;
+}
+#menu{
+	float: right;
+}   
+    
+#menu ul{
+    list-style: none;
+    font-size: 14px;
+}
+        
+#menu li{
+    display: block;
+    float: left;
+    text-transform: uppercase;
+    text-align: center;
+}
+           
+#menu li a{
+    display: block;
+    font-family: 'adam.cg_proregular';
+    color: #fff;
+    text-decoration: none;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 26px;
+}
+
+#menu li a:hover{
+    background: #151a1e;
+    color: #ffc700;
+}
+
+#nav-mobile{
+    background: url(../img/nav.png) no-repeat center center;
+    float: right;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top:0;
+    opacity: .6;
+}   
+
+#nav-mobile.nav-active{
+    opacity: 1;
+}
+
+#menu{
+    width: 100%;
+    float: none;
+    padding-top: 60px;
+}
+
+#menu ul{
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+    box-shadow: 0 1px 2px rgba(0,0,0,.5);
+    max-height: 0;
+    overflow: hidden;
+}
+  
+#menu li{
+    background: #33363b;
+    border-bottom: 1px solid #282b30;
+    float: none;
+}
+
+#menu li:last-child{ 
+	border-bottom: 0;
+}
+                
+#menu li a{
+    padding: 15px 0;
+    height: auto;
+    line-height: normal;
+}
+
+#menu li a:hover{
+	background:#2a2d33;
+}
+
+#menu ul.open-menu{
+    max-height: 500px;
+    -webkit-transition: max-height .4s;
+    -moz-transition: max-height .4s;
+    -ms-transition: max-height .4s;
+    -o-transition: max-height .4s;
+    transition: max-height .4s;
+}
+
+
+/* Columnas Planetas*/
+.col1{
+	width: 30%;
+}
+.col2{
+	width: 100%;
+}
+.col1, .col2{
+position: absolute;
+}
+
+/* Información */
+.col50{
+	width: 50%;
+	float: left;
+	padding: 1.5% 2%;
+}
+.item{
+	width: 100%;
+	border-bottom: solid 1px;
+}
+.parrafo-item{
+	font-family: 'adam.cg_proregular';
+	font-size: .7em;
+}
+.info{
+	height: 20000px;
+}
+
+/* Cuadro */
+.informacion{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+}
+
+.cuadro{
+	width: 50%;
+	margin-left:50%;
+	color: #fff;
+	position: absolute;
+	background: rgba(255, 255, 255, .1); 
+}
+.cuadro-sol{
+	margin-top:50%;
+	text-align: left;
+}
+.cuadro-mercurio{
+	margin-top:105%;
+	text-align: left;
+}
+.cuadro-venus{
+	margin-top:145%;
+	text-align: left;
+}
+.cuadro-tierra{
+	margin-top:180%;
+	text-align: left;
+}
+.cuadro-marte{
+	margin-top:220%;
+	text-align: left;
+}
+.cuadro-jupiter{
+	margin-top:310%;
+	text-align: left;
+}
+.cuadro-saturno{
+	margin-top:360%;
+	text-align: left;
+}
+.cuadro-urano{
+	margin-top:475%;
+	text-align: left;
+}
+.cuadro-neptuno{
+	margin-top:605%;
+	text-align: left;
+}
+.cuadro-pluton{
+	margin-top:640%;
+	text-align: left;
+}
+
+h2{
+	width: 100%;
+	font-size: 2em;
+	padding: 1% 0;
+	border-bottom: solid 1px #fff;
+	font-family: 'adam.cg_proregular';
+	text-align: center;
+}
+/* Mercurio */
+
+.mercurio{
+	padding-top: 50%;
+	overflow: hidden;
+}
+.mercurio img{
+	width: 10%;
+	margin-top:36%;
+	-webkit-animation: mercurio 20s linear infinite;
+    -moz-animation: mercurio 20s linear infinite;
+    -ms-animation: mercurio 20s linear infinite;  
+}
+
+/* venus */
+.venus{
+	overflow: hidden;
+}
+.venus img{
+	width: 12%;
+	margin-top:129%;
+	-webkit-animation: venus 22s linear infinite;
+    -moz-animation: venus 22s linear infinite;
+    -ms-animation: venus 22s linear infinite; 
+}
+
+/* tierra */
+.tierra{
+	margin-top:22%;
+	overflow: hidden;
+}
+.tierra img{
+	width: 15%;
+	margin-top:140%;
+	-webkit-animation: tierra 25s linear infinite;
+    -moz-animation: tierra 25s linear infinite;
+    -ms-animation: tiera 25s linear infinite; 
+}
+
+/* marte */
+.marte{
+	overflow: hidden;
+}
+.marte img{
+	width: 13%;
+	margin-top:205%;
+	-webkit-animation: marte 27s linear infinite;
+    -moz-animation: marte 27s linear infinite;
+    -ms-animation: marte 27s linear infinite; 
+}
+/* jupiter */
+.jupiter{
+	overflow: hidden;
+}
+.jupiter img{
+	width: 24%;
+	margin-top:286%;
+	-webkit-animation: jupiter 29s linear infinite;
+    -moz-animation: jupiter 29s linear infinite;
+    -ms-animation: jupiter 29s linear infinite; 
+}
+/* Saturno */
+.saturno{
+	overflow: hidden;
+}
+.saturno img{
+	width: 24%;
+	margin-top:336%;;
+	-webkit-animation: saturno 31s linear infinite;
+    -moz-animation: saturno 31s linear infinite;
+    -ms-animation: saturno 31s linear infinite; 
+}
+
+/* urano */
+.urano{
+	overflow: hidden;
+}
+.urano img{
+	width: 16%;
+	margin-top:453%;
+	-webkit-animation: urano 35s linear infinite;
+    -moz-animation: urano 35s linear infinite;
+    -ms-animation: urano 35s linear infinite; 
+}
+
+/* neptuno*/
+.neptuno{
+	overflow: hidden;
+}
+.neptuno img{
+	width: 17%;
+	margin-top:585%;
+	-webkit-animation: neptuno 39s linear infinite;
+    -moz-animation: neptuno 39s linear infinite;
+    -ms-animation: neptuno 39s linear infinite; 
+}
+
+/* Pluton*/
+.pluton{
+	overflow: hidden;
+}
+.pluton img{
+	width: 12%;
+	margin-top:620%;
+	-webkit-animation: pluton 42s linear infinite;
+    -moz-animation: pluton 42s linear infinite;
+    -ms-animation: pluton 42s linear infinite; 
+}
+
+
+@-webkit-keyframes rotation {
+    0%   { -webkit-transform: rotate(0deg); margin-left: -10%; }
+    100% { -webkit-transform: rotate(360deg); margin-left: 110%;}
+}
+@-moz-keyframes rotation {
+    0%   { -moz-transform: rotate(0deg); margin-left: -10%;}
+    100% { -moz-transform: rotate(360deg);margin-left: 110%; }
+}
+@-ms-keyframes rotation {
+    0%   { -ms-transform: rotate(0deg); margin-left: -10%; }
+    100% { -ms-transform: rotate(360deg); margin-left: 110%; }
+}
+/* Rotacion Tralacion Mercurio*/
+
+@-webkit-keyframes mercurio {
+    0%   { -webkit-transform: rotate(0deg); margin-left: -10%;margin-top: 35%;}
+	40%	 {margin-top: 40%;}
+	50%	 {margin-top: 41%;}
+	60%	 {margin-top: 40%;}
+    100% { -webkit-transform: rotate(360deg); margin-left: 110%; margin-top: 35%; }
+}
+
+@-moz-keyframes mercurio {
+    0%   { -moz-transform: rotate(0deg);margin-left: -10%; margin-top: 35%;}
+    40%	 {margin-top: 40%;}
+	50%	 {margin-top: 41%;}
+	60%	 {margin-top: 40%;}
+    100% { -moz-transform: rotate(360deg);margin-left: 110%;margin-top: 35%; }
+}
+@-ms-keyframes mercurio {
+    0%   { -ms-transform: rotate(0deg);margin-left: -10%;margin-top: 35%;}
+    40%	 {margin-top: 40%;}
+	50%	 {margin-top: 41%;}
+	60%	 {margin-top: 40%;}
+    100% { -ms-transform: rotate(360deg);margin-left: 110%;margin-top: 35%;}
+}
+/* Rotacion Tralacion Venus*/
+
+@-webkit-keyframes venus {
+    0%   { -webkit-transform: rotate(0deg); margin-left: -10%;margin-top: 125%;}
+	40%	 {margin-top: 130%;}
+	50%	 {margin-top: 131%;}
+	60%	 {margin-top: 130%;}
+    100% { -webkit-transform: rotate(360deg); margin-left: 110%; margin-top: 125%; }
+}
+@-moz-keyframes venus {
+    0%   { -moz-transform: rotate(0deg);margin-left: -10%; margin-top: 125%;}
+    40%	 {margin-top: 130%;}
+	50%	 {margin-top: 131%;}
+	60%	 {margin-top: 130%;}
+    100% { -moz-transform: rotate(360deg);margin-left: 110%;margin-top: 125%; }
+}
+@-ms-keyframes venus {
+    0%   { -ms-transform: rotate(0deg);margin-left: -10%;margin-top: 125%;}
+    40%	 {margin-top: 130%;}
+	50%	 {margin-top: 131%;}
+	60%	 {margin-top: 130%;}
+    100% { -ms-transform: rotate(360deg);margin-left: 110%;margin-top: 125%;}
+}
+/* Rotacion Tralacion Tierra*/
+
+@-webkit-keyframes tierra {
+    0%   { -webkit-transform: rotate(0deg); margin-left: -10%;margin-top: 136%;}
+	40%	 {margin-top: 141%;}
+	50%	 {margin-top: 142%;}
+	60%	 {margin-top: 141%;}
+    100% { -webkit-transform: rotate(360deg); margin-left: 110%; margin-top: 136%; }
+}
+@-moz-keyframes tierra {
+    0%   { -moz-transform: rotate(0deg);margin-left: -10%; margin-top: 136%;}
+    40%	 {margin-top: 141%;}
+	50%	 {margin-top: 142%;}
+	60%	 {margin-top: 141%;}
+    100% { -moz-transform: rotate(360deg);margin-left: 110%;margin-top: 136%; }
+}
+@-ms-keyframes tierra {
+    0%   { -ms-transform: rotate(0deg);margin-left: -10%;margin-top: 136%;}
+    40%	 {margin-top: 141%;}
+	50%	 {margin-top: 142%;}
+	60%	 {margin-top: 141%;}
+    100% { -ms-transform: rotate(360deg);margin-left: 110%;margin-top: 136%;}
+}
+/* Rotacion Tralacion Marte*/
+
+@-webkit-keyframes marte {
+    0%   { -webkit-transform: rotate(0deg); margin-left: -10%;margin-top: 200%;}
+	40%	 {margin-top: 206%;}
+	50%	 {margin-top: 207%;}
+	60%	 {margin-top: 206%;}
+    100% { -webkit-transform: rotate(360deg); margin-left: 110%; margin-top: 201%; }
+}
+@-moz-keyframes marte{
+    0%   { -moz-transform: rotate(0deg);margin-left: -10%; margin-top: 200%;}
+    40%	 {margin-top: 206%;}
+	50%	 {margin-top: 207%;}
+	60%	 {margin-top: 206%;}
+    100% { -moz-transform: rotate(360deg);margin-left: 110%;margin-top: 200%; }
+}
+@-ms-keyframes marte {
+    0%   { -ms-transform: rotate(0deg);margin-left: -10%;margin-top: 200%;}
+    40%	 {margin-top: 206%;}
+	50%	 {margin-top: 207%;}
+	60%	 {margin-top: 206%;}
+    100% { -ms-transform: rotate(360deg);margin-left: 110%;margin-top: 200%;}
+}
+
+/* Rotacion Tralacion Jupiter*/
+
+@-webkit-keyframes jupiter{
+    0%   { -webkit-transform: rotate(0deg); margin-left: -10%;margin-top: 286%;}
+	40%	 {margin-top: 290%;}
+	50%	 {margin-top: 291%;}
+	60%	 {margin-top: 290%;}
+    100% { -webkit-transform: rotate(360deg); margin-left: 110%; margin-top: 286%; }
+}
+@-moz-keyframes jupiter {
+    0%   { -moz-transform: rotate(0deg);margin-left: -10%; margin-top: 286%;}
+    40%	 {margin-top: 290%;}
+	50%	 {margin-top: 291%;}
+	60%	 {margin-top: 290%;}
+    100% { -moz-transform: rotate(360deg);margin-left: 110%;margin-top: 286%; }
+}
+@-ms-keyframes jupiter{
+    0%   { -ms-transform: rotate(0deg);margin-left: -10%;margin-top: 286%;}
+    40%	 {margin-top: 290%;}
+	50%	 {margin-top: 291%;}
+	60%	 {margin-top: 290%;}
+    100% { -ms-transform: rotate(360deg);margin-left: 110%;margin-top: 286%;}
+}
+
+/* Rotacion Tralacion Saturno*/
+
+@-webkit-keyframes saturno{
+    0%   {margin-left: -10%;margin-top: 333%;}
+	40%	 {margin-top: 335%;}
+	50%	 {margin-top: 336%;}
+	60%	 {margin-top: 335%;}
+    100% { margin-left: 110%; margin-top: 333%; }
+}
+@-moz-keyframes saturno{
+    0%   {margin-left: -10%; margin-top: 286%;}
+    40%	 {margin-top: 290%;}
+	50%	 {margin-top: 291%;}
+	60%	 {margin-top: 290%;}
+    100% { -moz-transform: rotate(360deg);margin-left: 110%;margin-top: 286%; }
+}
+@-ms-keyframes saturno{
+    0%   {margin-left: -10%;margin-top: 286%;}
+    40%	 {margin-top: 290%;}
+	50%	 {margin-top: 291%;}
+	60%	 {margin-top: 290%;}
+    100% {margin-left: 110%;margin-top: 286%;}
+}
+
+/* Rotacion Tralacion urano*/
+
+@-webkit-keyframes urano{
+    0%   { -webkit-transform: rotate(0deg); margin-left: -10%;margin-top: 449%;}
+	40%	 {margin-top: 453%;}
+	50%	 {margin-top: 454%;}
+	60%	 {margin-top: 453%;}
+    100% { -webkit-transform: rotate(360deg); margin-left: 110%; margin-top: 449%; }
+}
+@-moz-keyframes urano {
+    0%   { -moz-transform: rotate(0deg);margin-left: -10%; margin-top: 449%;}
+    40%	 {margin-top: 453%;}
+	50%	 {margin-top: 454%;}
+	60%	 {margin-top: 453%;}
+    100% { -moz-transform: rotate(360deg);margin-left: 110%;margin-top: 449%; }
+}
+@-ms-keyframes urano{
+    0%   { -ms-transform: rotate(0deg);margin-left: -10%;margin-top: 449%;}
+    40%	 {margin-top: 453%;}
+	50%	 {margin-top: 454%;}
+	60%	 {margin-top: 453%;}
+    100% { -ms-transform: rotate(360deg);margin-left: 110%;margin-top: 449%;}
+}
+
+/* Rotacion Tralacion Neptuno*/
+
+@-webkit-keyframes neptuno{
+    0%   { -webkit-transform: rotate(0deg); margin-left: -10%;margin-top: 581%;}
+	40%	 {margin-top: 584%;}
+	50%	 {margin-top: 585%;}
+	60%	 {margin-top: 584%;}
+    100% { -webkit-transform: rotate(360deg); margin-left: 110%; margin-top: 581%; }
+}
+@-moz-keyframes neptuno {
+    0%   { -moz-transform: rotate(0deg);margin-left: -10%; margin-top: 581%;}
+    40%	 {margin-top: 290%;}
+	50%	 {margin-top: 291%;}
+	60%	 {margin-top: 290%;}
+    100% { -moz-transform: rotate(360deg);margin-left: 110%;margin-top: 581%; }
+}
+@-ms-keyframes neptuno{
+    0%   { -ms-transform: rotate(0deg);margin-left: -10%;margin-top: 581%;}
+    40%	 {margin-top: 290%;}
+	50%	 {margin-top: 291%;}
+	60%	 {margin-top: 290%;}
+    100% { -ms-transform: rotate(360deg);margin-left: 110%;margin-top: 581%;}
+}
+
+/* Rotacion Tralacion Pluton*/
+
+@-webkit-keyframes pluton{
+    0%   { -webkit-transform: rotate(0deg); margin-left: -10%;margin-top: 616%;}
+	40%	 {margin-top: 620%;}
+	50%	 {margin-top: 621%;}
+	60%	 {margin-top: 620%;}
+    100% { -webkit-transform: rotate(360deg); margin-left: 110%; margin-top: 616%; }
+}
+@-moz-keyframes pluton {
+    0%   { -moz-transform: rotate(0deg);margin-left: -10%; margin-top: 616%;}
+    40%	 {margin-top: 620%;}
+	50%	 {margin-top: 621%;}
+	60%	 {margin-top: 620%;}
+    100% { -moz-transform: rotate(360deg);margin-left: 110%;margin-top: 616%; }
+}
+@-ms-keyframes pluton{
+    0%   { -ms-transform: rotate(0deg);margin-left: -10%;margin-top: 616%;}
+    40%	 {margin-top: 620%;}
+	50%	 {margin-top: 621%;}
+	60%	 {margin-top: 620%;}
+    100% { -ms-transform: rotate(360deg);margin-left: 110%;margin-top: 616%;}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+   .contenedor{
+   		padding: 0 5%;
+   }
+   .parrafo-header{
+		width: 100%;
+		font-size: 1em;
+	}
+	/* Cuadro */
+	.cuadro p{
+		font-size: .5em;
+	}
+	h2{
+		font-size: 1.8em;
+	}
+	.rocket{
+    	display: none;
+    }
+}
+
+@media screen and (min-width: 569px) and (max-width: 767px) {
+	.contenedor{
+   		padding: 0 5%;
+   	}
+	.parrafo-header{
+		width: 100%;
+		font-size: .8em;
+	}
+	/* Cuadro */
+	.cuadro p{
+		font-size: .5em;
+	}
+	.rocket{
+    	display: none;
+    }
+	
+}
+
+@media screen and (max-width: 568px) {
+	.contenedor{
+   		padding: 0 5%;
+   	}
+	.parrafo-header{
+		width: 100%;
+		font-size: .5em;
+	}
+	/* Cuadro */
+	.cuadro p{
+		font-size: .5em;
+	}
+	.rocket{
+    	display: none;
+    }
+	
+}
